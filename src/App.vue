@@ -1,0 +1,181 @@
+<template lang="html">
+  <div className="App">
+    <h1>{jsonResponse.title}</h1>
+    <main className="steps">
+    <section id="states" data-state="form" className="">
+      <div id="wrap">
+        <Count />
+      </div>
+    </section>
+    </main>
+  </div>
+</template>
+
+<script>
+import Count from "./containers/count";
+export default {
+  components: {
+    Count
+  }
+};
+</script>
+
+<style scoped>
+html {
+  overflow-y: scroll;
+}
+
+body {
+  min-width: 670px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+main {
+  position: relative;
+}
+
+h1 {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 20px 30px;
+  margin: 0 0 30px 0;
+}
+
+h3 {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 10px 30px;
+  margin: 20px 0 10px -30px;
+  color: #18bc9c;
+  font-size: 20px;
+}
+
+section {
+  padding: 0 0 30px 30px;
+  clear: both;
+}
+
+p + fieldset {
+  margin-top: 30px;
+}
+
+pre {
+  margin: 20px 30px;
+  font-size: 12px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+.indent {
+  margin-left: 30px;
+}
+
+.table > tbody > tr > td,
+.table > thead > tr > th {
+  padding: 4px 6px;
+}
+
+table code {
+  font-size: 0.8em;
+}
+
+section#controls {
+  padding: 0 0 30px 20px;
+}
+
+main.steps article {
+  width: 500px;
+  border: 1px solid #eee;
+  padding: 20px;
+}
+
+main.states article {
+  display: inline-flex;
+  vertical-align: top;
+  width: 150px;
+  height: 150px;
+  background: #eee;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 5px 5px 0;
+  transition: 0.5s all;
+}
+
+main.states article.active {
+  border: 1px solid black;
+}
+
+main.steps h2 {
+  margin: 0 0 40px;
+  font-size: 2em;
+  color: #1dccaa;
+}
+
+main.steps p {
+  font-size: 20px;
+}
+
+.form-group {
+  margin: 10px;
+}
+
+.checkbox-block,
+.radio-block {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.checkbox,
+.radio {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -30px;
+  margin-top: 0px;
+}
+
+.text {
+  width: 98%;
+  height: 25px;
+  padding-left: 10px;
+}
+
+.selectbox {
+  width: 100%;
+  height: 25px;
+  padding-left: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.btn-sm {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background: #39ae92;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+</style>
