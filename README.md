@@ -1,1 +1,3 @@
 # vue-soomsun
+
+yarn start로 안 되고 yarn run을 해야 되네??????

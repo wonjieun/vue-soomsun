@@ -1,10 +1,12 @@
 <template lang="html">
   <div className="App">
-    <h1>{jsonResponse.title}</h1>
+    <h1>테스트</h1>
     <main className="steps">
     <section id="states" data-state="form" className="">
       <div id="wrap">
-        <Count />
+        <StepFirst />
+        <MoveButton />
+        <!-- <Count /> -->
       </div>
     </section>
     </main>
@@ -13,9 +15,15 @@
 
 <script>
 import Count from "./containers/count";
+import Start from "./components/start";
+import StepFirst from "./components/stepFirst";
+import MoveButton from "./components/stepController";
 export default {
   components: {
-    Count
+    Count,
+    Start,
+    StepFirst,
+    MoveButton
   }
 };
 </script>
