@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "vue": "^2.5.11",
-    "yarn": "^1.17.3"
+    "yarn": "^1.22.0"
   },
   "browserslist": [
     "> 1%",
